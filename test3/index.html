@@ -384,8 +384,21 @@
                 <p class="form__error" id="contactEmailError" role="alert"></p>
               </div>
               <div class="form__group">
+                <label class="form__label" for="contactMenu">ご希望メニュー <span class="form__required">必須</span></label>
+                <select class="form__select" id="contactMenu" name="contactMenu">
+                  <option value="">選択してください</option>
+                  <option value="cut">カット</option>
+                  <option value="color">カラー</option>
+                  <option value="perm">パーマ</option>
+                  <option value="treatment">トリートメント</option>
+                  <option value="headspa">ヘッドスパ</option>
+                  <option value="other">その他</option>
+                </select>
+                <p class="form__error" id="contactMenuError" role="alert"></p>
+              </div>
+              <div class="form__group">
                 <label class="form__label" for="contactMessage">お問い合わせ内容 <span class="form__required">必須</span></label>
-                <textarea class="form__textarea" id="contactMessage" name="contactMessage" placeholder="ご質問・ご相談内容をご記入ください。" rows="8"></textarea>
+                <textarea class="form__textarea" id="contactMessage" name="contactMessage" placeholder="ご質問・ご相談内容をご記入ください。" rows="6"></textarea>
                 <p class="form__error" id="contactMessageError" role="alert"></p>
               </div>
               <button class="btn btn--primary btn--full" type="submit">送信する</button>

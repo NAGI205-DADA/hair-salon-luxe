@@ -191,36 +191,43 @@ const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   if (validateContactForm()) {
-    document.getElementById('contactNotice').textContent =
-      'お問い合わせを受け付けました。担当者よりご連絡いたします。';
     contactForm.reset();
+    document.getElementById('contactNotice').textContent =
+      'ご予約ありがとうございます。確認のご連絡をさせていただきます。';
   }
 });
 
 function validateContactForm() {
   let isValid = true;
 
-  // 名前
+  // 名前（必須）
   isValid = checkRequired(
     document.getElementById('contactName'),
     document.getElementById('contactNameError'),
     'お名前を入力してください。'
   ) && isValid;
 
-  // メールアドレス
+  // メールアドレス（必須・形式チェック）
   const email = document.getElementById('contactEmail');
   const emailError = document.getElementById('contactEmailError');
   if (!email.value.trim()) {
     setError(email, emailError, 'メールアドレスを入力してください。');
     isValid = false;
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
-    setError(email, emailError, '正しいメールアドレスを入力してください。');
+    setError(email, emailError, '正しいメールアドレスの形式で入力してください。');
     isValid = false;
   } else {
     clearError(email, emailError);
   }
 
-  // お問い合わせ内容
+  // ご希望メニュー（必須）
+  isValid = checkRequired(
+    document.getElementById('contactMenu'),
+    document.getElementById('contactMenuError'),
+    'ご希望メニューを選択してください。'
+  ) && isValid;
+
+  // お問い合わせ内容（必須）
   isValid = checkRequired(
     document.getElementById('contactMessage'),
     document.getElementById('contactMessageError'),

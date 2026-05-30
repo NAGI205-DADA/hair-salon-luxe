@@ -20,7 +20,7 @@
   --font-ja: 'Noto Serif JP', serif;
 
   /* レイアウト */
-  --section-padding:   96px;
+  --section-padding:   90px;
   --container-width:   1200px;
   --container-padding: 40px;
   --header-height:     72px;
@@ -311,20 +311,23 @@ button {
   overflow: hidden;
 }
 
-/* グラデーション背景（本番運用時は背景画像に差し替え） */
+/* ヒーロー背景画像 */
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #5A3D20 0%, #8B6F47 45%, #C4A882 100%);
+  background-image: url('public/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 0;
 }
 
-/* 半透明オーバーレイ */
+/* 暗めのオーバーレイ（白テキストの視認性を確保） */
 .hero__bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(40, 24, 10, 0.25);
+  background: rgba(20, 10, 4, 0.55);
 }
 
 .hero__content {
@@ -943,7 +946,7 @@ button {
    ============================================= */
 @media (max-width: 768px) {
   :root {
-    --section-padding:   64px;
+    --section-padding:   80px;
     --container-padding: 20px;
   }
 
@@ -1061,5 +1064,12 @@ button {
   .lightbox__next {
     font-size: 2rem;
     padding: 12px;
+  }
+
+  /* iOSでのフォーカス時自動ズームを防ぐ（16px未満が原因） */
+  .form__input,
+  .form__select,
+  .form__textarea {
+    font-size: 1rem;
   }
 }
