@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="hair salon LUXE — 表参道の美容室。カット・カラー・パーマ・トリートメントなど、お客様一人ひとりに合わせた丁寧なスタイル提案をお届けします。">
+  <title>hair salon LUXE | 表参道の美容室</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー・固定ナビゲーション -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="header__logo">hair salon <span>LUXE</span></a>
+      <button class="header__menu-btn" id="menuBtn" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#staff">Staff</a></li>
+          <li><a href="#access">Access</a></li>
+          <li><a href="#contact" class="header__nav-cta">Booking</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ヒーローセクション -->
+    <section class="hero" id="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__content">
+        <p class="hero__sub">表参道の美容室</p>
+        <h1 class="hero__title">あなたらしい美しさを、<br>ここから。</h1>
+        <p class="hero__desc">hair salon LUXE は、一人ひとりの個性を大切にした<br>丁寧なスタイル提案をお届けします。</p>
+        <a href="#contact" class="btn btn--hero">ご予約はこちら</a>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- アバウトセクション -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">About</p>
+          <h2 class="section-title">サロンについて</h2>
+        </div>
+        <div class="about__inner">
+          <div class="about__image">
+            <img src="https://placehold.co/600x750/C4A882/FAF7F4?text=Salon+Interior" alt="サロン内装" loading="lazy">
+          </div>
+          <div class="about__content">
+            <h3 class="about__heading">上質な時間と、<br>理想のスタイルを。</h3>
+            <p class="about__text">hair salon LUXE は、日々のあわただしさから離れ、自分だけの特別な時間を過ごせるサロンです。</p>
+            <p class="about__text">熟練のスタイリストが、お客様一人ひとりの骨格・髪質・ライフスタイルに合わせたスタイルをご提案。素材を活かした丁寧な施術で、サロンを出た後も続く美しさをお届けします。</p>
+            <p class="about__text">使用する薬剤はすべてダメージに配慮したものを厳選。髪に優しく、仕上がりにこだわるのが LUXE のスタイルです。</p>
+            <div class="about__features">
+              <div class="about__feature">
+                <span class="about__feature-num">01</span>
+                <span class="about__feature-text">骨格に合わせたカット</span>
+              </div>
+              <div class="about__feature">
+                <span class="about__feature-num">02</span>
+                <span class="about__feature-text">ダメージレスな薬剤選定</span>
+              </div>
+              <div class="about__feature">
+                <span class="about__feature-num">03</span>
+                <span class="about__feature-text">完全プライベート空間</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- メニュー・料金セクション -->
+    <section class="menu section section--light" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Menu &amp; Price</p>
+          <h2 class="section-title">メニュー・料金</h2>
+          <p class="section-desc">すべて税込価格です。施術内容によって料金が異なる場合がございます。<br>詳しくはお問い合わせください。</p>
+        </div>
+        <div class="menu__grid">
+          <div class="menu__card">
+            <h3 class="menu__card-title">Cut</h3>
+            <p class="menu__card-sub">カット</p>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <span class="menu__item-name">カット</span>
+                <span class="menu__item-price">¥6,600〜</span>
+                <span class="menu__item-time">60分</span>
+              </li>
+              <li class="menu__item">
+                <span class="menu__item-name">カット＋シャンプーブロー</span>
+                <span class="menu__item-price">¥7,700〜</span>
+                <span class="menu__item-time">75分</span>
+              </li>
+              <li class="menu__item">
+                <span class="menu__item-name">前髪カット</span>
+                <span class="menu__item-price">¥1,650</span>
+                <span class="menu__item-time">20分</span>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__card">
+            <h3 class="menu__card-title">Color</h3>
+            <p class="menu__card-sub">カラー</p>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <span class="menu__item-name">全体カラー</span>
+                <span class="menu__item-price">¥8,800〜</span>
+                <span class="menu__item-time">90分</span>
+              </li>
+              <li class="menu__item">
+                <span class="menu__item-name">リタッチカラー</span>
+                <span class="menu__item-price">¥6,600〜</span>
+                <span class="menu__item-time">70分</span>
+              </li>
+              <li class="menu__item">
+                <span class="menu__item-name">ハイライト</span>
+                <span class="menu__item-price">¥11,000〜</span>
+                <span class="menu__item-time">120分</span>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__card">
+            <h3 class="menu__card-title">Perm</h3>
+            <p class="menu__card-sub">パーマ</p>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <span class="menu__item-name">デジタルパーマ</span>
+                <span class="menu__item-price">¥16,500〜</span>
+                <span class="menu__item-time">150分</span>
+              </li>
+              <li class="menu__item">
+                <span class="menu__item-name">コールドパーマ</span>
+                <span class="menu__item-price">¥13,200〜</span>
+                <span class="menu__item-time">120分</span>
+              </li>
+              <li class="menu__item">
+                <span class="menu__item-name">縮毛矯正</span>
+                <span class="menu__item-price">¥19,800〜</span>
+                <span class="menu__item-time">180分</span>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__card">
+            <h3 class="menu__card-title">Treatment</h3>
+            <p class="menu__card-sub">トリートメント・ヘッドスパ</p>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <span class="menu__item-name">集中トリートメント</span>
+                <span class="menu__item-price">¥4,400〜</span>
+                <span class="menu__item-time">30分</span>
+              </li>
+              <li class="menu__item">
+                <span class="menu__item-name">プレミアムトリートメント</span>
+                <span class="menu__item-price">¥7,700〜</span>
+                <span class="menu__item-time">45分</span>
+              </li>
+              <li class="menu__item">
+                <span class="menu__item-name">ヘッドスパ</span>
+                <span class="menu__item-price">¥3,300〜</span>
+                <span class="menu__item-time">30分</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ギャラリーセクション -->
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Gallery</p>
+          <h2 class="section-title">スタイルギャラリー</h2>
+        </div>
+        <div class="gallery__grid">
+          <div class="gallery__item" data-index="0">
+            <img src="https://placehold.co/600x750/C4A882/FAF7F4?text=Style+01" alt="スタイル01" loading="lazy">
+            <div class="gallery__overlay"><span>View</span></div>
+          </div>
+          <div class="gallery__item" data-index="1">
+            <img src="https://placehold.co/600x750/B89A7A/FAF7F4?text=Style+02" alt="スタイル02" loading="lazy">
+            <div class="gallery__overlay"><span>View</span></div>
+          </div>
+          <div class="gallery__item" data-index="2">
+            <img src="https://placehold.co/600x750/A08060/FAF7F4?text=Style+03" alt="スタイル03" loading="lazy">
+            <div class="gallery__overlay"><span>View</span></div>
+          </div>
+          <div class="gallery__item" data-index="3">
+            <img src="https://placehold.co/600x750/D4B896/3D2B1F?text=Style+04" alt="スタイル04" loading="lazy">
+            <div class="gallery__overlay"><span>View</span></div>
+          </div>
+          <div class="gallery__item" data-index="4">
+            <img src="https://placehold.co/600x750/8B6F47/FAF7F4?text=Style+05" alt="スタイル05" loading="lazy">
+            <div class="gallery__overlay"><span>View</span></div>
+          </div>
+          <div class="gallery__item" data-index="5">
+            <img src="https://placehold.co/600x750/6B4C2A/FAF7F4?text=Style+06" alt="スタイル06" loading="lazy">
+            <div class="gallery__overlay"><span>View</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ライトボックス -->
+      <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="画像拡大表示">
+        <button class="lightbox__close" id="lightboxClose" aria-label="閉じる">&times;</button>
+        <button class="lightbox__prev" id="lightboxPrev" aria-label="前の画像">&#8249;</button>
+        <button class="lightbox__next" id="lightboxNext" aria-label="次の画像">&#8250;</button>
+        <div class="lightbox__content">
+          <img src="" alt="" id="lightboxImg">
+        </div>
+      </div>
+    </section>
+
+    <!-- スタッフ紹介セクション -->
+    <section class="staff section section--light" id="staff">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Staff</p>
+          <h2 class="section-title">スタッフ紹介</h2>
+        </div>
+        <div class="staff__grid">
+          <div class="staff__card">
+            <div class="staff__photo">
+              <img src="https://placehold.co/400x500/C4A882/FAF7F4?text=Ayaka" alt="佐藤 彩花" loading="lazy">
+            </div>
+            <div class="staff__info">
+              <p class="staff__role">オーナースタイリスト</p>
+              <h3 class="staff__name">
+                佐藤 彩花
+                <span class="staff__name-en">Ayaka Sato</span>
+              </h3>
+              <p class="staff__specialty">得意：トレンドカラー / 骨格に合わせたカット</p>
+              <p class="staff__comment">「鏡を見るたびに、テンションが上がるスタイルを」をモットーに、お客様一人ひとりと向き合っています。ご相談はお気軽に。</p>
+            </div>
+          </div>
+          <div class="staff__card">
+            <div class="staff__photo">
+              <img src="https://placehold.co/400x500/B89A7A/FAF7F4?text=Misaki" alt="田中 美咲" loading="lazy">
+            </div>
+            <div class="staff__info">
+              <p class="staff__role">スタイリスト</p>
+              <h3 class="staff__name">
+                田中 美咲
+                <span class="staff__name-en">Misaki Tanaka</span>
+              </h3>
+              <p class="staff__specialty">得意：パーマ / ダメージレスカラー</p>
+              <p class="staff__comment">髪のダメージを最小限に抑えながら、理想のスタイルを叶えます。ヘアケアに関するお悩みもぜひご相談ください。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- アクセスセクション -->
+    <section class="access section" id="access">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Access</p>
+          <h2 class="section-title">アクセス</h2>
+        </div>
+        <div class="access__inner">
+          <div class="access__map">
+            <!-- Google マップ（ダミー埋め込み・本番運用時に差し替え） -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6936987834677!2d139.70385731524677!3d35.66540708019705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca1c8b83439%3A0x44e3ed44024f0a35!2z6KGo5Y-j6YCa!5e0!3m2!1sja!2sjp!4v1621234567890"
+              width="100%"
+              height="400"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="hair salon LUXE の地図">
+            </iframe>
+          </div>
+          <div class="access__info">
+            <dl class="access__detail">
+              <div class="access__detail-row">
+                <dt>住所</dt>
+                <dd>〒150-0001<br>東京都渋谷区神宮前3-5-10 LUXEビル2F</dd>
+              </div>
+              <div class="access__detail-row">
+                <dt>アクセス</dt>
+                <dd>東京メトロ銀座線・千代田線・半蔵門線<br>「表参道駅」A2出口より徒歩5分</dd>
+              </div>
+              <div class="access__detail-row">
+                <dt>電話番号</dt>
+                <dd><a href="tel:0312345678">03-1234-5678</a></dd>
+              </div>
+              <div class="access__detail-row">
+                <dt>営業時間</dt>
+                <dd>10:00〜19:00（最終受付 18:00）</dd>
+              </div>
+              <div class="access__detail-row">
+                <dt>定休日</dt>
+                <dd>毎週火曜日</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 予約・お問い合わせセクション -->
+    <section class="contact section section--light" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Booking / Contact</p>
+          <h2 class="section-title">ご予約・お問い合わせ</h2>
+          <p class="section-desc">フォームよりお気軽にご連絡ください。<br>※ メール送信機能は現在未対応です。担当者より折り返しご連絡いたします。</p>
+        </div>
+        <div class="contact__inner">
+
+          <!-- 予約フォーム -->
+          <div class="contact__form-block">
+            <h3 class="contact__form-title">ご予約</h3>
+            <form class="form" id="bookingForm" novalidate>
+              <div class="form__group">
+                <label class="form__label" for="bookingName">お名前 <span class="form__required">必須</span></label>
+                <input class="form__input" type="text" id="bookingName" name="bookingName" placeholder="山田 花子" autocomplete="name">
+                <p class="form__error" id="bookingNameError" role="alert"></p>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="bookingTel">電話番号 <span class="form__required">必須</span></label>
+                <input class="form__input" type="tel" id="bookingTel" name="bookingTel" placeholder="090-1234-5678" autocomplete="tel">
+                <p class="form__error" id="bookingTelError" role="alert"></p>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="bookingDate">ご希望日時 <span class="form__required">必須</span></label>
+                <input class="form__input" type="datetime-local" id="bookingDate" name="bookingDate">
+                <p class="form__error" id="bookingDateError" role="alert"></p>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="bookingMenu">ご希望メニュー <span class="form__required">必須</span></label>
+                <select class="form__select" id="bookingMenu" name="bookingMenu">
+                  <option value="">選択してください</option>
+                  <option value="cut">カット</option>
+                  <option value="color">カラー</option>
+                  <option value="perm">パーマ</option>
+                  <option value="treatment">トリートメント</option>
+                  <option value="headspa">ヘッドスパ</option>
+                  <option value="other">その他・組み合わせ</option>
+                </select>
+                <p class="form__error" id="bookingMenuError" role="alert"></p>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="bookingNote">備考</label>
+                <textarea class="form__textarea" id="bookingNote" name="bookingNote" placeholder="アレルギーや髪のお悩みなど、お気軽にご記入ください。" rows="4"></textarea>
+              </div>
+              <button class="btn btn--primary btn--full" type="submit">予約を申し込む</button>
+              <p class="form__notice" id="bookingNotice" role="status"></p>
+            </form>
+          </div>
+
+          <!-- お問い合わせフォーム -->
+          <div class="contact__form-block">
+            <h3 class="contact__form-title">お問い合わせ</h3>
+            <form class="form" id="contactForm" novalidate>
+              <div class="form__group">
+                <label class="form__label" for="contactName">お名前 <span class="form__required">必須</span></label>
+                <input class="form__input" type="text" id="contactName" name="contactName" placeholder="山田 花子" autocomplete="name">
+                <p class="form__error" id="contactNameError" role="alert"></p>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="contactEmail">メールアドレス <span class="form__required">必須</span></label>
+                <input class="form__input" type="email" id="contactEmail" name="contactEmail" placeholder="example@email.com" autocomplete="email">
+                <p class="form__error" id="contactEmailError" role="alert"></p>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="contactMessage">お問い合わせ内容 <span class="form__required">必須</span></label>
+                <textarea class="form__textarea" id="contactMessage" name="contactMessage" placeholder="ご質問・ご相談内容をご記入ください。" rows="8"></textarea>
+                <p class="form__error" id="contactMessageError" role="alert"></p>
+              </div>
+              <button class="btn btn--primary btn--full" type="submit">送信する</button>
+              <p class="form__notice" id="contactNotice" role="status"></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#hero" class="footer__logo">hair salon <span>LUXE</span></a>
+        <div class="footer__sns">
+          <!-- Instagram アイコン -->
+          <a href="#" class="footer__sns-link" aria-label="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <!-- X（旧Twitter）アイコン -->
+          <a href="#" class="footer__sns-link" aria-label="X (旧Twitter)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.733-8.835L1.254 2.25H8.08l4.253 5.622 5.912-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
+            </svg>
+          </a>
+        </div>
+        <p class="footer__copy">&copy; 2025 hair salon LUXE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

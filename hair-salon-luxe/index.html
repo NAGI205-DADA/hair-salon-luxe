@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hair salon LUXE | 完全個室の美容室</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header id="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-sub">hair salon</span>
+        <span class="logo-main">LUXE</span>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#concept">コンセプト</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#stylist">スタイリスト</a></li>
+          <li><a href="#contact" class="nav-btn">ご予約</a></li>
+        </ul>
+        <!-- ハンバーガーボタン（モバイル用） -->
+        <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+    <!-- モバイルナビオーバーレイ -->
+    <div class="nav-overlay" id="navOverlay">
+      <ul class="nav-overlay-list">
+        <li><a href="#concept">コンセプト</a></li>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#stylist">スタイリスト</a></li>
+        <li><a href="#contact">ご予約</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== ヒーローセクション ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-catch">あなただけの、上質な時間を</p>
+      <h1 class="hero-title">
+        <span class="hero-title-sub">hair salon</span>
+        LUXE
+      </h1>
+      <p class="hero-text">
+        完全個室で、心ゆくまでくつろげる<br>プライベートサロン
+      </p>
+      <a href="#contact" class="btn-primary">ご予約はこちら</a>
+    </div>
+    <!-- 装飾ライン -->
+    <div class="hero-deco"></div>
+  </section>
+
+  <!-- ===== コンセプトセクション ===== -->
+  <section id="concept" class="concept">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">CONCEPT</p>
+        <h2 class="section-title">LUXEが選ばれる<br>3つの理由</h2>
+      </div>
+      <div class="concept-cards">
+        <div class="concept-card fade-in">
+          <div class="concept-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="14" width="32" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M18 14V10a6 6 0 0 1 12 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="28" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>完全個室の<br>プライベート空間</h3>
+          <p>他のお客様を気にせず、リラックスしてお過ごしいただける完全個室をご用意。あなただけの贅沢なプライベート空間で、心から寛いでください。</p>
+        </div>
+        <div class="concept-card fade-in">
+          <div class="concept-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8c0 0-10 8-10 18a10 10 0 0 0 20 0C34 16 24 8 24 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M24 22v10M20 28h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>オーガニック製品<br>を使用</h3>
+          <p>髪と地球にやさしいオーガニック認証製品のみを使用。自然由来の成分で、美しく健康的な髪へと導きます。敏感肌の方も安心してお任せください。</p>
+        </div>
+        <div class="concept-card fade-in">
+          <div class="concept-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="20" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 30v10M18 36h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 18l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>駅徒歩3分の<br>好アクセス</h3>
+          <p>○○駅から徒歩わずか3分。お仕事帰りや休日のお出かけついでに、気軽にお立ち寄りいただけます。駅近で雨の日も安心です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== メニュー・料金表セクション ===== -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">MENU &amp; PRICE</p>
+        <h2 class="section-title">メニュー・料金表</h2>
+        <p class="section-desc">すべてのメニューに、丁寧なカウンセリングが含まれます。</p>
+      </div>
+      <div class="menu-cards">
+
+        <!-- カット -->
+        <div class="menu-card fade-in">
+          <div class="menu-card-header">
+            <h3>カット</h3>
+            <span class="menu-label-en">CUT</span>
+          </div>
+          <ul class="menu-list">
+            <li>
+              <span class="menu-item-name">カット</span>
+              <span class="menu-item-price">¥6,600</span>
+            </li>
+            <li>
+              <span class="menu-item-name">カット＋シャンプー</span>
+              <span class="menu-item-price">¥7,700</span>
+            </li>
+            <li>
+              <span class="menu-item-name">カット＋ブロー</span>
+              <span class="menu-item-price">¥8,250</span>
+            </li>
+            <li>
+              <span class="menu-item-name">前髪カット</span>
+              <span class="menu-item-price">¥1,650</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- カラー -->
+        <div class="menu-card fade-in">
+          <div class="menu-card-header">
+            <h3>カラー</h3>
+            <span class="menu-label-en">COLOR</span>
+          </div>
+          <ul class="menu-list">
+            <li>
+              <span class="menu-item-name">リタッチカラー</span>
+              <span class="menu-item-price">¥8,800</span>
+            </li>
+            <li>
+              <span class="menu-item-name">全体カラー</span>
+              <span class="menu-item-price">¥11,000</span>
+            </li>
+            <li>
+              <span class="menu-item-name">ハイライト</span>
+              <span class="menu-item-price">¥13,200〜</span>
+            </li>
+            <li>
+              <span class="menu-item-name">グラデーション</span>
+              <span class="menu-item-price">¥15,400〜</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- パーマ -->
+        <div class="menu-card fade-in">
+          <div class="menu-card-header">
+            <h3>パーマ</h3>
+            <span class="menu-label-en">PERM</span>
+          </div>
+          <ul class="menu-list">
+            <li>
+              <span class="menu-item-name">ショートパーマ</span>
+              <span class="menu-item-price">¥11,000〜</span>
+            </li>
+            <li>
+              <span class="menu-item-name">ミディアムパーマ</span>
+              <span class="menu-item-price">¥13,200〜</span>
+            </li>
+            <li>
+              <span class="menu-item-name">ロングパーマ</span>
+              <span class="menu-item-price">¥15,400〜</span>
+            </li>
+            <li>
+              <span class="menu-item-name">デジタルパーマ</span>
+              <span class="menu-item-price">¥17,600〜</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- トリートメント -->
+        <div class="menu-card fade-in">
+          <div class="menu-card-header">
+            <h3>トリートメント</h3>
+            <span class="menu-label-en">TREATMENT</span>
+          </div>
+          <ul class="menu-list">
+            <li>
+              <span class="menu-item-name">システムTR</span>
+              <span class="menu-item-price">¥3,300〜</span>
+            </li>
+            <li>
+              <span class="menu-item-name">オーガニックTR</span>
+              <span class="menu-item-price">¥5,500〜</span>
+            </li>
+            <li>
+              <span class="menu-item-name">ヘッドスパ（30分）</span>
+              <span class="menu-item-price">¥5,500</span>
+            </li>
+            <li>
+              <span class="menu-item-name">ヘッドスパ（60分）</span>
+              <span class="menu-item-price">¥9,900</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <p class="menu-note fade-in">※ 表示価格はすべて税込みです。髪の長さ・状態により料金が異なる場合がございます。</p>
+    </div>
+  </section>
+
+  <!-- ===== スタイリスト紹介セクション ===== -->
+  <section id="stylist" class="stylist">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">STYLIST</p>
+        <h2 class="section-title">スタイリスト紹介</h2>
+      </div>
+      <div class="stylist-content fade-in">
+        <!-- アバター（写真の代替） -->
+        <div class="stylist-photo">
+          <div class="stylist-avatar">M</div>
+          <p class="stylist-avatar-name">田中 美咲</p>
+        </div>
+        <!-- プロフィール情報 -->
+        <div class="stylist-info">
+          <p class="stylist-role">OWNER STYLIST</p>
+          <h3 class="stylist-name">
+            田中 美咲
+            <span>Misaki Tanaka</span>
+          </h3>
+          <div class="stylist-divider"></div>
+          <p class="stylist-career">
+            東京・青山の有名サロンで10年のキャリアを積み独立。「お客様一人ひとりの個性を最大限に引き出す」をモットーに、丁寧なカウンセリングで理想のスタイルを実現します。髪のお悩みから理想のイメージまで、何でもお気軽にご相談ください。
+          </p>
+          <div class="stylist-specialties">
+            <h4 class="specialties-title">得意なスタイル</h4>
+            <div class="specialty-tags">
+              <span>ナチュラルカラー</span>
+              <span>外国人風カラー</span>
+              <span>柔らかウェーブ</span>
+              <span>大人ショート</span>
+              <span>艶感スタイル</span>
+              <span>ヘッドスパ</span>
+            </div>
+          </div>
+          <p class="stylist-license">
+            【資格】美容師免許 / ヘッドスパスペシャリスト / オーガニック認定コスメアドバイザー
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ご予約・お問い合わせセクション ===== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">RESERVATION</p>
+        <h2 class="section-title">ご予約・お問い合わせ</h2>
+        <p class="section-desc">
+          以下のフォームにご記入の上、送信してください。<br>
+          確認後、2営業日以内にご連絡いたします。
+        </p>
+      </div>
+      <form class="contact-form fade-in" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">お名前 <span class="required">必須</span></label>
+            <input type="text" id="name" name="name" placeholder="山田 花子" required>
+            <p class="form-error-msg">お名前を入力してください</p>
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス <span class="required">必須</span></label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            <p class="form-error-msg">正しいメールアドレスを入力してください</p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">電話番号 <span class="required">必須</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="090-0000-0000" required>
+            <p class="form-error-msg">電話番号を入力してください</p>
+          </div>
+          <div class="form-group">
+            <label for="menu-select">ご希望メニュー <span class="required">必須</span></label>
+            <select id="menu-select" name="menu" required>
+              <option value="">選択してください</option>
+              <option value="cut">カット</option>
+              <option value="color">カラー</option>
+              <option value="cut-color">カット＋カラー</option>
+              <option value="perm">パーマ</option>
+              <option value="cut-perm">カット＋パーマ</option>
+              <option value="treatment">トリートメント</option>
+              <option value="headspa">ヘッドスパ</option>
+              <option value="other">その他・ご相談</option>
+            </select>
+            <p class="form-error-msg">ご希望メニューを選択してください</p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date1">ご希望日時（第1希望） <span class="required">必須</span></label>
+            <input type="datetime-local" id="date1" name="date1" required>
+            <p class="form-error-msg">ご希望日時を選択してください</p>
+          </div>
+          <div class="form-group">
+            <label for="date2">ご希望日時（第2希望）</label>
+            <input type="datetime-local" id="date2" name="date2">
+          </div>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="message">ご要望・ご質問</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="髪のお悩みや、ご希望のスタイルをお気軽にご記入ください。"
+          ></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-primary">送信する</button>
+        </div>
+      </form>
+      <!-- 送信完了メッセージ（初期非表示） -->
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon">✓</div>
+        <p class="form-success-title">送信が完了しました</p>
+        <p class="form-success-text">お問い合わせありがとうございます。<br>2営業日以内にご連絡いたします。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== フッター ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <span class="logo-sub">hair salon</span>
+        <span class="logo-main">LUXE</span>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>アクセス</h4>
+          <address>
+            〒150-0001<br>
+            東京都渋谷区神宮前1-1-1<br>
+            LUXEビル 2F
+          </address>
+          <p class="footer-tel">TEL：<a href="tel:0300000000">03-0000-0000</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>営業時間</h4>
+          <p>平日：10:00 〜 20:00<br>土日祝：9:00 〜 19:00</p>
+          <h4 class="footer-col-title-mt">定休日</h4>
+          <p>毎週火曜日</p>
+        </div>
+        <div class="footer-col">
+          <h4>ナビゲーション</h4>
+          <ul class="footer-nav">
+            <li><a href="#concept">コンセプト</a></li>
+            <li><a href="#menu">メニュー・料金</a></li>
+            <li><a href="#stylist">スタイリスト</a></li>
+            <li><a href="#contact">ご予約・お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2024 hair salon LUXE. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
