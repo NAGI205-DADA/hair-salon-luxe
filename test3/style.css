@@ -315,7 +315,7 @@ button {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('public/hero-bg.jpg');
+  background-image: url('public/image.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
