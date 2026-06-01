@@ -184,60 +184,6 @@ function validateBookingForm() {
 }
 
 /* =============================================
-   お問い合わせフォームのバリデーション
-   ============================================= */
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (validateContactForm()) {
-    contactForm.reset();
-    document.getElementById('contactNotice').textContent =
-      'ご予約ありがとうございます。確認のご連絡をさせていただきます。';
-  }
-});
-
-function validateContactForm() {
-  let isValid = true;
-
-  // 名前（必須）
-  isValid = checkRequired(
-    document.getElementById('contactName'),
-    document.getElementById('contactNameError'),
-    'お名前を入力してください。'
-  ) && isValid;
-
-  // メールアドレス（必須・形式チェック）
-  const email = document.getElementById('contactEmail');
-  const emailError = document.getElementById('contactEmailError');
-  if (!email.value.trim()) {
-    setError(email, emailError, 'メールアドレスを入力してください。');
-    isValid = false;
-  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
-    setError(email, emailError, '正しいメールアドレスの形式で入力してください。');
-    isValid = false;
-  } else {
-    clearError(email, emailError);
-  }
-
-  // ご希望メニュー（必須）
-  isValid = checkRequired(
-    document.getElementById('contactMenu'),
-    document.getElementById('contactMenuError'),
-    'ご希望メニューを選択してください。'
-  ) && isValid;
-
-  // お問い合わせ内容（必須）
-  isValid = checkRequired(
-    document.getElementById('contactMessage'),
-    document.getElementById('contactMessageError'),
-    'お問い合わせ内容を入力してください。'
-  ) && isValid;
-
-  return isValid;
-}
-
-/* =============================================
    バリデーションのユーティリティ関数
    ============================================= */
 

@@ -318,13 +318,13 @@
       </div>
     </section>
 
-    <!-- 予約・お問い合わせセクション -->
+    <!-- 予約セクション -->
     <section class="contact section section--light" id="contact">
       <div class="container">
         <div class="section-header">
-          <p class="section-label">Booking / Contact</p>
-          <h2 class="section-title">ご予約・お問い合わせ</h2>
-          <p class="section-desc">フォームよりお気軽にご連絡ください。<br>※ メール送信機能は現在未対応です。担当者より折り返しご連絡いたします。</p>
+          <p class="section-label">Booking</p>
+          <h2 class="section-title">ご予約</h2>
+          <p class="section-desc">フォームよりお気軽にご連絡ください。<br>※ 担当者より折り返しご連絡いたします。</p>
         </div>
         <div class="contact__inner">
 
@@ -366,43 +366,6 @@
               </div>
               <button class="btn btn--primary btn--full" type="submit">予約を申し込む</button>
               <p class="form__notice" id="bookingNotice" role="status"></p>
-            </form>
-          </div>
-
-          <!-- お問い合わせフォーム -->
-          <div class="contact__form-block">
-            <h3 class="contact__form-title">お問い合わせ</h3>
-            <form class="form" id="contactForm" novalidate>
-              <div class="form__group">
-                <label class="form__label" for="contactName">お名前 <span class="form__required">必須</span></label>
-                <input class="form__input" type="text" id="contactName" name="contactName" placeholder="山田 花子" autocomplete="name">
-                <p class="form__error" id="contactNameError" role="alert"></p>
-              </div>
-              <div class="form__group">
-                <label class="form__label" for="contactEmail">メールアドレス <span class="form__required">必須</span></label>
-                <input class="form__input" type="email" id="contactEmail" name="contactEmail" placeholder="example@email.com" autocomplete="email">
-                <p class="form__error" id="contactEmailError" role="alert"></p>
-              </div>
-              <div class="form__group">
-                <label class="form__label" for="contactMenu">ご希望メニュー <span class="form__required">必須</span></label>
-                <select class="form__select" id="contactMenu" name="contactMenu">
-                  <option value="">選択してください</option>
-                  <option value="cut">カット</option>
-                  <option value="color">カラー</option>
-                  <option value="perm">パーマ</option>
-                  <option value="treatment">トリートメント</option>
-                  <option value="headspa">ヘッドスパ</option>
-                  <option value="other">その他</option>
-                </select>
-                <p class="form__error" id="contactMenuError" role="alert"></p>
-              </div>
-              <div class="form__group">
-                <label class="form__label" for="contactMessage">お問い合わせ内容 <span class="form__required">必須</span></label>
-                <textarea class="form__textarea" id="contactMessage" name="contactMessage" placeholder="ご質問・ご相談内容をご記入ください。" rows="6"></textarea>
-                <p class="form__error" id="contactMessageError" role="alert"></p>
-              </div>
-              <button class="btn btn--primary btn--full" type="submit">送信する</button>
-              <p class="form__notice" id="contactNotice" role="status"></p>
             </form>
           </div>
 
